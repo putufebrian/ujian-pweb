@@ -1,0 +1,110 @@
+/* Gaya font dan warna latar belakang body */
+body {
+    font-family: Arial, sans-serif; /* Menggunakan font Arial atau font sans-serif jika tidak tersedia */
+    background-color: #f4f4f4; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+}
+
+/* Gaya untuk container */
+.container {
+    width: 50%; /* Lebar kontainer */
+    margin: 50px auto; /* Margin untuk penempatan di tengah */
+    padding: 20px; /* Padding */
+    background: #f8f9fa; /* Warna latar belakang container */
+    border-radius: 8px; /* Border radius */
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.6); /* Efek bayangan dengan warna hijau */
+}
+
+/* Gaya untuk judul */
+h2 {
+    margin-bottom: 20px; /* Margin bawah */
+    text-align: center; /* Posisi teks rata tengah */
+    color: #28a745; /* Warna teks judul */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+}
+
+/* Gaya untuk form-group */
+.form-group {
+    margin-bottom: 20px; /* Margin bawah */
+    position: relative; /* Posisi relatif */
+}
+
+/* Gaya untuk label */
+label {
+    font-weight: bold; /* Tebal teks label */
+    display: block; /* Menjadikan teks label sebagai block element */
+    margin-bottom: 8px; /* Margin bawah */
+    color: #555; /* Warna teks label */
+    transition: all 0.3s ease-in-out; /* Efek transisi */
+}
+
+/* Gaya untuk input teks */
+input[type="text"] {
+    width: calc(100% - 18px); /* Lebar input teks */
+    padding: 12px; /* Padding */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 6px; /* Border radius */
+    box-sizing: border-box; /* Box sizing */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+}
+
+/* Efek saat input teks dalam keadaan focus */
+input[type="text"]:focus {
+    border-color: #28a745; /* Warna border saat dalam keadaan focus */
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.6); /* Efek bayangan saat dalam keadaan focus */
+}
+
+/* Efek label pada input teks */
+input[type="text"]:not(:placeholder-shown) + label,
+input[type="text"]:focus + label {
+    transform: translateY(-20px); /* Menggeser label ke atas */
+    font-size: 12px; /* Ukuran teks label saat input terisi */
+    color: #28a745; /* Warna teks label saat input terisi */
+}
+
+/* Gaya tombol */
+button {
+    padding: 12px 24px; /* Padding */
+    border: none; /* Menghapus border */
+    border-radius: 6px; /* Border radius */
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    cursor: pointer; /* Kursor saat diarahkan ke tombol */
+    transition: transform 0.2s, box-shadow 0.3s, color 0.3s; /* Efek transisi */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+}
+
+/* Efek saat tombol dihover */
+button:hover {
+    background-color: #218838; /* Warna latar belakang tombol saat dihover */
+    transform: scale(1.05); /* Efek perbesar saat dihover */
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.6); /* Efek bayangan saat dihover */
+    color: #fff; /* Warna teks tombol saat dihover */
+}
+
+/* Efek saat tombol ditekan */
+button:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) inset; /* Efek bayangan saat ditekan */
+}
+
+/* Warna placeholder pada input teks */
+input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Warna teks placeholder */
+    transition: color 0.3s ease; /* Efek transisi */
+}
+
+/* Efek placeholder saat input dalam keadaan focus atau terisi */
+input[type="text"]:focus::placeholder,
+input[type="text"]:not(:placeholder-shown)::placeholder {
+    color: transparent; /* Menghilangkan teks placeholder */
+}
+
+/* Menambahkan responsivitas pada ukuran layar kecil */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Lebar kontainer pada layar kecil */
+    }
+}
+

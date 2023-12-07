@@ -1,0 +1,116 @@
+/* Set nilai default margin, padding, dan box-sizing untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya font dan warna default untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Gaya Navbar */
+.navbar {
+    background-color: #343a40; /* Warna latar belakang Navbar */
+    color: white; /* Warna teks Navbar */
+}
+
+/* Gaya untuk merek Navbar */
+.navbar-brand {
+    font-size: 24px; /* Ukuran font */
+}
+
+/* Container utama */
+.container {
+    width: 80%; /* Lebar konten */
+    margin: 20px auto; /* Jarak ke tepi dan atur ke tengah */
+}
+
+/* Gaya untuk judul header */
+.header-title {
+    text-align: center; /* Posisi teks di tengah */
+    margin-bottom: 20px; /* Jarak bawah */
+    font-size: 40px; /* Ukuran font */
+}
+
+/* Gaya untuk tabel */
+.table {
+    width: 100%; /* Lebar tabel */
+    border-collapse: collapse; /* Gabungkan border */
+    background-color: white; /* Warna latar belakang tabel */
+    border-radius: 8px; /* Radius sudut */
+    overflow: hidden; /* Hilangkan overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+/* Gaya untuk header dan sel dalam tabel */
+.table th, .table td {
+    padding: 12px; /* Padding */
+    border-bottom: 1px solid #ddd; /* Garis bawah */
+    text-align: center; /* Posisi teks di tengah */
+}
+
+/* Gaya untuk header dalam tabel */
+.table th {
+    background-color: #343a40; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+}
+
+/* Gaya untuk baris ganjil dalam tabel */
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Warna latar belakang baris ganjil */
+}
+
+/* Efek hover pada baris tabel */
+.table tbody tr:hover {
+    background-color: #e2e6ea; /* Warna latar belakang saat dihover */
+}
+
+/* Gaya untuk tombol */
+.btn {
+    display: inline-block; /* Tampilkan sebagai inline-block */
+    padding: 8px 16px; /* Padding */
+    text-align: center; /* Posisi teks di tengah */
+    text-decoration: none; /* Hapus dekorasi tautan */
+    color: white; /* Warna teks tombol */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    border-radius: 4px; /* Radius sudut */
+    transition: background-color 0.3s ease; /* Transisi hover */
+}
+
+/* Efek hover pada tombol */
+.btn:hover {
+    background-color: #0056b3; /* Warna latar belakang saat dihover */
+}
+
+/* Gaya tombol warna hijau */
+.btn-primary {
+    background-color: #28a745; /* Warna latar belakang tombol hijau */
+    margin-top: 10px; /* Jarak atas */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+/* Efek hover pada tombol warna hijau */
+.btn-primary:hover {
+    background-color: #218838; /* Warna latar belakang saat dihover */
+}
+
+/* Gaya tombol warna merah */
+.btn-delete {
+    background-color: #dc3545; /* Warna latar belakang tombol merah */
+}
+
+/* Efek hover pada tombol warna merah */
+.btn-delete:hover {
+    background-color: #c82333; /* Warna latar belakang saat dihover */
+}
+
+/* Gaya tombol logout */
+.btn-logout {
+    position: absolute; /* Posisi absolut */
+    top: 10px; /* Jarak dari atas */
+    right: 10px; /* Jarak dari kanan */
+}

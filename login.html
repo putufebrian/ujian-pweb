@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css"> <!-- Memasukkan file eksternal CSS untuk styling -->
+  <style>
+    .login-info {
+      background-color: #f4f4f4;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    .login-info p {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container"> <!-- Div container untuk bagian login -->
+  <h2>Login Admin</h2> <!-- Judul halaman login -->
+  <form id="loginForm"> <!-- Form untuk input login -->
+    <div class="input-group"> <!-- Div untuk kelompok input -->
+      <label for="username">Username</label> <!-- Label untuk input username -->
+      <input type="text" id="username" name="username" required> <!-- Input field untuk username -->
+    </div>
+    <div class="input-group"> <!-- Div untuk kelompok input -->
+      <label for="password">Password</label> <!-- Label untuk input password -->
+      <input type="password" id="password" name="password" required> <!-- Input field untuk password -->
+    </div>
+    <div class="input-group"> <!-- Div untuk kelompok input -->
+      <button type="submit" id="loginButton">Login</button> <!-- Tombol submit untuk login -->
+    </div>
+    <p id="errorText" style="color: red; display: none;">Username atau password salah</p> <!-- Pesan kesalahan untuk ditampilkan -->
+  </form>
+
+  <!-- Catatan kecil informasi username dan password -->
+  <div class="login-info">
+    <p><strong>Catatan Penting:</strong></p>
+    <p><strong>Username:</strong> admin</p>
+    <p><strong>Password:</strong> admin</p>
+    <p>Pastikan untuk menggunakan informasi di atas saat login untuk mengakses halaman admin.</p>
+  </div>
+</div>
+
+<script src="login.js"></script> <!-- Memasukkan file eksternal JavaScript untuk logika login -->
+</body>
+</html>

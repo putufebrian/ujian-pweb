@@ -1,0 +1,110 @@
+/* CSS untuk menetapkan gaya umum halaman */
+body {
+    font-family: Arial, sans-serif; /* Menetapkan jenis font untuk teks di dalam body */
+    background-color: #f4f4f4; /* Menetapkan warna latar belakang */
+    color: #333; /* Menetapkan warna teks */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+}
+
+/* Pengaturan untuk container */
+.container {
+    width: 50%; /* Lebar container */
+    margin: 50px auto; /* Margin atas dan bawah 50px, dan margin kiri-kanan auto */
+    padding: 20px; /* Padding di dalam container */
+    background: #f8f9fa; /* Warna latar belakang container */
+    border-radius: 8px; /* Border radius untuk membuat sudut container berbentuk bulat */
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.6); /* Efek bayangan pada container */
+}
+
+/* Gaya untuk judul h2 */
+h2 {
+    margin-bottom: 20px; /* Spasi bawah sebesar 20px dari judul h2 */
+    text-align: center; /* Posisi teks tengah */
+    color: #007bff; /* Warna teks judul h2 */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+}
+
+/* Gaya untuk kelompok elemen form */
+.form-group {
+    margin-bottom: 20px; /* Spasi bawah sebesar 20px */
+    position: relative; /* Menetapkan posisi elemen form */
+}
+
+/* Gaya untuk label pada form */
+label {
+    font-weight: bold; /* Menjadikan teks label menjadi tebal */
+    display: block; /* Membuat label menjadi block-level element */
+    margin-bottom: 8px; /* Spasi bawah sebesar 8px dari label */
+    color: #555; /* Warna teks label */
+    transition: all 0.3s ease-in-out; /* Efek transisi untuk perubahan gaya label */
+}
+
+/* Gaya untuk input teks pada form */
+input[type="text"] {
+    width: calc(100% - 18px); /* Menetapkan lebar input teks */
+    padding: 12px; /* Padding di dalam input teks */
+    border: 1px solid #ccc; /* Border input teks */
+    border-radius: 6px; /* Border radius */
+    box-sizing: border-box; /* Box-sizing untuk mengatur box model */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Efek transisi saat hover atau focus */
+}
+
+/* Efek saat input teks dalam keadaan focus */
+input[type="text"]:focus {
+    border-color: #007bff; /* Warna border saat dalam keadaan focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); /* Efek bayangan saat dalam keadaan focus */
+}
+
+/* Gaya untuk label input teks saat terisi atau dalam keadaan focus */
+input[type="text"]:not(:placeholder-shown) + label,
+input[type="text"]:focus + label {
+    transform: translateY(-20px); /* Menggeser label ke atas */
+    font-size: 12px; /* Menyesuaikan ukuran font */
+    color: #007bff; /* Warna teks label saat terisi atau dalam keadaan focus */
+}
+
+/* Gaya untuk tombol */
+button {
+    padding: 12px 24px; /* Padding tombol */
+    border: none; /* Menghapus border */
+    border-radius: 6px; /* Border radius */
+    background-color: #007bff; /* Warna latar tombol */
+    color: #fff; /* Warna teks tombol */
+    cursor: pointer; /* Mengubah kursor menjadi pointer */
+    transition: transform 0.2s, box-shadow 0.3s, color 0.3s; /* Efek transisi */
+    text-transform: uppercase; /* Menjadikan teks menjadi huruf kapital */
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #0056b3; /* Warna latar tombol saat dihover */
+    transform: scale(1.05); /* Efek perbesar tombol */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); /* Efek bayangan saat dihover */
+    color: #fff; /* Warna teks tombol saat dihover */
+}
+
+/* Efek saat tombol ditekan */
+button:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) inset; /* Efek bayangan inset saat ditekan */
+}
+
+/* Gaya untuk placeholder pada input teks */
+input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Warna placeholder */
+    transition: color 0.3s ease; /* Efek transisi */
+}
+
+/* Efek pada placeholder saat input teks dalam keadaan focus atau terisi */
+input[type="text"]:focus::placeholder,
+input[type="text"]:not(:placeholder-shown)::placeholder {
+    color: transparent; /* Mengubah warna placeholder menjadi transparan */
+}
+
+/* Menambahkan responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Lebar container saat layar kecil */
+    }
+}
+

@@ -1,0 +1,75 @@
+/* Style untuk elemen body */
+body {
+  font-family: Arial, sans-serif; /* Mengatur jenis font */
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+  display: flex; /* Menggunakan flexbox untuk penataan konten */
+  justify-content: center; /* Pusatkan secara horizontal */
+  align-items: center; /* Pusatkan secara vertikal */
+  height: 100vh; /* Atur tinggi sesuai 100% viewport height */
+  background-color: #f4f4f4; /* Warna latar belakang */
+}
+
+/* Style untuk container login */
+.login-container {
+  background-color: #fff; /* Warna latar belakang */
+  padding: 40px; /* Jarak dalam kontainer */
+  border-radius: 8px; /* Bentuk sudut */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  text-align: center; /* Pusatkan teks */
+  max-width: 400px; /* Lebar maksimum */
+  width: 100%; /* Lebar maksimum */
+}
+
+/* Style untuk kelompok input */
+.input-group {
+  margin-bottom: 20px; /* Jarak antar kelompok input */
+}
+
+/* Style untuk label */
+label {
+  display: block; /* Menjadikan label sebagai block element */
+  text-align: left; /* Arahkan teks ke kiri */
+  margin-bottom: 10px; /* Jarak bawah */
+  font-weight: bold; /* Style teks tebal */
+  color: #333; /* Warna teks label */
+}
+
+/* Style untuk input type text dan password */
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 16px); /* Lebar input */
+  padding: 14px; /* Ukuran padding */
+  border-radius: 5px; /* Bentuk sudut */
+  border: 1px solid #ccc; /* Style border */
+  transition: border-color 0.3s ease; /* Animasi transisi border */
+  margin-bottom: 15px; /* Jarak bawah */
+}
+
+/* Style untuk input focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Warna border saat focus */
+}
+
+/* Style untuk button */
+button {
+  padding: 14px 28px; /* Ukuran padding */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Bentuk sudut */
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  cursor: pointer; /* Ganti cursor saat hover */
+  transition: background-color 0.3s ease; /* Animasi transisi latar belakang */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+/* Style saat tombol hover */
+button:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+/* Style saat tombol aktif */
+button:active {
+  transform: translateY(3px); /* Pergerakan saat tombol aktif */
+}
